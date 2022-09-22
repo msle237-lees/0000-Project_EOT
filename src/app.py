@@ -57,6 +57,7 @@ def run_step_3():
         t_start = perf_counter()
         bubbleSort(l)
         t_stop = perf_counter()
+        print(f"Elapsed Time: {t_stop-t_start}")
         t_times.append(t_stop-t_start)
     t_time = 0
     for i in range(len(t_times)):
@@ -73,6 +74,7 @@ def run_step_4():
         t_start = perf_counter()
         selectionSort(l, n)
         t_stop = perf_counter()
+        print(f"Elapsed Time: {t_stop-t_start}")
         t_times.append(t_stop-t_start)
     t_time = 0
     for i in range(len(t_times)):
