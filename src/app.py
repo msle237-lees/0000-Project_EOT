@@ -26,6 +26,7 @@ def run_step_1():
     l = []
     for i in range(n):
         l.append(random.randint(0, 10000))
+    print("Unsorted Array: ")
     print(l)
     t_start = perf_counter()
     bubbleSort(l)
@@ -38,6 +39,7 @@ def run_step_2():
     l = []
     for i in range(n):
         l.append(random.randint(0, 10000))
+    print("Unsorted Array: ")
     print(l)
     t_start = perf_counter()
     selectionSort(l, n)
