@@ -78,7 +78,13 @@ class main:
         self.runs[a].append((sum(self.times)) / len(arr))
 
     def step_4(self):
-        pass
+        for i in range(len(arr)):
+            t_start = perf_counter()
+            self.selectionSort(arr[i], len(arr[i]))
+            t_end = perf_counter()
+            tt = t_end - t_start
+            self.times.append(tt)
+        self.runs[a].append((sum(self.times)) / len(arr))
 
     def run(self):
         self.step_1()
@@ -87,11 +93,11 @@ class main:
         # Step 3: 1000 arrays, 500 samples each
         tt = perf_counter()
         processors = []
-        for i in range(50):
-            l = self.create_arrays(500, 20)
+        for i in range(20):
+            l = self.create_arrays(500, 50)
             processors.append(Process(target=self.step_3, args=(l,0,)))
             processors[i].start()
-        for i in range(50):
+        for i in range(20):
             processors[i].join()
         te = perf_counter()
         print(f"Total Execution Time: {(te-tt)/60:0.2f}")
@@ -99,11 +105,11 @@ class main:
         # Step 3: 1000 arrays, 2500 samples each
         tt = perf_counter()
         processors = []
-        for i in range(50):
-            l = self.create_arrays(2500, 20)
+        for i in range(20):
+            l = self.create_arrays(2500, 50)
             processors.append(Process(target=self.step_3, args=(l,1,)))
             processors[i].start()
-        for i in range(50):
+        for i in range(20):
             processors[i].join()
         te = perf_counter()
         print(f"Total Execution Time: {(te-tt)/60:0.2f}")
@@ -111,11 +117,11 @@ class main:
         # Step 3: 1000 arrays, 5000 samples each
         tt = perf_counter()
         processors = []
-        for i in range(50):
-            l = self.create_arrays(5000, 20)
-            processors.append(Process(target=self.step_3, args=(l,1,)))
+        for i in range(20):
+            l = self.create_arrays(5000, 50)
+            processors.append(Process(target=self.step_3, args=(l,2,)))
             processors[i].start()
-        for i in range(50):
+        for i in range(20):
             processors[i].join()
         te = perf_counter()
         print(f"Total Execution Time: {(te-tt)/60:0.2f}")
@@ -123,11 +129,11 @@ class main:
         # Step 4: 1000 arrays, 500 samples each
         tt = perf_counter()
         processors = []
-        for i in range(50):
-            l = self.create_arrays(500, 20)
-            processors.append(Process(target=self.step_4, args=(l,0,)))
+        for i in range(20):
+            l = self.create_arrays(500, 50)
+            processors.append(Process(target=self.step_4, args=(l,3,)))
             processors[i].start()
-        for i in range(50):
+        for i in range(20):
             processors[i].join()
         te = perf_counter()
         print(f"Total Execution Time: {(te-tt)/60:0.2f}")
@@ -135,22 +141,23 @@ class main:
         # Step 4: 1000 arrays, 2500 samples each
         tt = perf_counter()
         processors = []
-        for i in range(50):
-            l = self.create_arrays(2500, 20)
-            processors.append(Process(target=self.step_4, args=(l,1,)))
+        for i in range(20):
+            l = self.create_arrays(2500, 50)
+            processors.append(Process(target=self.step_4, args=(l,4,)))
             processors[i].start()
-        for i in range(50):
+        for i in range(20):
             processors[i].join()
         te = perf_counter()
         print(f"Total Execution Time: {(te-tt)/60:0.2f}")
+
         # Step 4: 1000 arrays, 5000 samples each
         tt = perf_counter()
         processors = []
-        for i in range(50):
-            l = self.create_arrays(5000, 20)
-            processors.append(Process(target=self.step_4, args=(l,1,)))
+        for i in range(20):
+            l = self.create_arrays(5000, 50)
+            processors.append(Process(target=self.step_4, args=(l,5,)))
             processors[i].start()
-        for i in range(50):
+        for i in range(20):
             processors[i].join()
         te = perf_counter()
         print(f"Total Execution Time: {(te-tt)/60:0.2f}")
