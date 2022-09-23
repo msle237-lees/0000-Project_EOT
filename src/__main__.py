@@ -1,23 +1,31 @@
-from src import app
+from src import app_new
 import argparse
 
-arg_desc = '''\
-            0001-Project_EOT
-                End of Term Project for CSE 2300-02 - Discrete Structures.
-                Author: Michael Lees
-            '''
+parser = argparse.ArgumentParser()
+parser.add_argument('-a', help='Run all steps', action='store_true')
+parser.add_argument('-s1', help='Run only Step 1', action='store_true')
+parser.add_argument('-s2', help='Run only Step 2', action='store_true')
+parser.add_argument('-s3', help='Run only Step 3', action='store_true')
+parser.add_argument('-s4', help='Run only Step 4', action='store_true')
+parser.add_argument('-s5', help='Run only Step 5', action='store_true')
 
-parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=arg_desc)
-parser.add_argument("-c", "--code", help="Runs step 1 from the Readme File.", required=False)
-args = parser.parse_args()
-print(args)
+options = parser.parse_args()
+
+m = app_new.main()
 
 if __name__ == '__main__':
-    if args.code == "step1":
-        app.run_step_1()
-    elif args.code == "step2":
-        app.run_step_2()
-    elif args.code == "step3":
-        app.run_step_3()
-    elif args.code == "step4":
-        app.run_step_4()
+    if options.a:
+        print('Running All Steps')
+        # app.run_all()
+        m.run()
+    elif options.s1:
+        print('s1')
+    elif options.s2:
+        print('s2')
+    elif options.s3:
+        # app.run_step_3()
+        print('s3')
+    elif options.s4:
+        print('s4')
+    elif options.s5:
+        print('s5')
