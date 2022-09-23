@@ -70,22 +70,26 @@ class main:
         return l
 
     def step_3(self, arr, a):
-        for i in tqdm(range(len(arr))):
-            t_start = perf_counter()
-            self.bubbleSort(arr[i])
-            t_end = perf_counter()
-            tt = t_end - t_start
-            self.times.append(tt)
-        self.runs[a].append((sum(self.times)) / len(arr))
+        with tqdm(total=100) as pbar:
+            for i in tqdm(range(len(arr))):
+                t_start = perf_counter()
+                self.bubbleSort(arr[i])
+                t_end = perf_counter()
+                tt = t_end - t_start
+                self.times.append(tt)
+                pbar.update(len(arr))
+            self.runs[a].append((sum(self.times)) / len(arr))
 
     def step_4(self):
-        for i in tqdm(range(len(arr))):
-            t_start = perf_counter()
-            self.selectionSort(arr[i], len(arr[i]))
-            t_end = perf_counter()
-            tt = t_end - t_start
-            self.times.append(tt)
-        self.runs[a].append((sum(self.times)) / len(arr))
+        with tqdm(total=100) as pbar:
+            for i in range(len(arr)):
+                t_start = perf_counter()
+                self.selectionSort(arr[i], len(arr[i]))
+                t_end = perf_counter()
+                tt = t_end - t_start
+                self.times.append(tt)
+                pbar.update(len(arr))
+            self.runs[a].append((sum(self.times)) / len(arr))
 
     def run(self, progress_bar):
         self.step_1()
