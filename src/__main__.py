@@ -35,4 +35,3 @@ if __name__ == '__main__':
         print('s4')
     elif options.s5:
         print('s5')
-    elif options.p:
