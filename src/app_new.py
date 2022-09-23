@@ -2,6 +2,7 @@ from time import sleep, perf_counter
 from multiprocessing import Pool, Process
 import random
 import sys
+import tqdm
 
 
 class main:
@@ -69,7 +70,7 @@ class main:
         return l
 
     def step_3(self, arr, a):
-        for i in range(len(arr)):
+        for i in tqdm(range(len(arr))):
             t_start = perf_counter()
             self.bubbleSort(arr[i])
             t_end = perf_counter()
@@ -78,7 +79,7 @@ class main:
         self.runs[a].append((sum(self.times)) / len(arr))
 
     def step_4(self):
-        for i in range(len(arr)):
+        for i in tqdm(range(len(arr))):
             t_start = perf_counter()
             self.selectionSort(arr[i], len(arr[i]))
             t_end = perf_counter()
@@ -86,7 +87,7 @@ class main:
             self.times.append(tt)
         self.runs[a].append((sum(self.times)) / len(arr))
 
-    def run(self):
+    def run(self, progress_bar):
         self.step_1()
         self.step_2()
 
