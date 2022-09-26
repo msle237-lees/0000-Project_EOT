@@ -153,59 +153,59 @@ def run_all():
           f"\t\tAverage Time: {run3_time_average: 0.6f}\n" +
           f"\t\tTotal Time elapsed since thread start: {(perf3_stop-perf3)/60:0.2f} min\n")
 
-    # # Step 4: 500 samples
-    # perf4 = perf_counter()
-    # threads = [None] * 125
-    # for i in range(0, 125):
-    #     t = Thread(target=run_step_4, args=(8, 500, 1, 0))
-    #     threads[i] = t
-    #     t.start()
-    # for t in threads:
-    #     t.join()
-    # run4_time = sum(run4)
-    # run4_time_average = run1_time / 1000
-    # perf4_stop = perf_counter()
-    # print(f"Step 4:\n" +
-    #       f"\tRun 1: 500 samples over 1000 arrays: (Selection Sort)\n\n" +
-    #       f"\t\tNumber of Threads required: 125\n" +
-    #       f"\t\tAverage Time: {run4_time_average: 0.6f}\n" +
-    #       f"\t\tTotal Time elapsed since thread start: {(perf4_stop-perf4)/60:0.2f} min\n")
-    #
-    # # Step 4: 2500 samples
-    # perf5 = perf_counter()
-    # threads = [None] * 125
-    # for j in range(0, 125):
-    #     t = Thread(target=run_step_4, args=(8, 2500, 2, j))
-    #     threads[j] = t
-    #     t.start()
-    # for i in range(0, len(threads)):
-    #         threads[i].join()
-    #
-    # run5_time = sum(run5)
-    # run5_time_average = run5_time / 1000
-    # perf5_stop = perf_counter()
-    # print(f"\tRun 2: 2500 samples over 1000 arrays: (Selection Sort)\n\n" +
-    #       f"\t\tNumber of Threads required: 125\n" +
-    #       f"\t\tAverage Time: {run5_time_average: 0.6f}\n" +
-    #       f"\t\tTotal Time elapsed since thread start: {(perf5_stop-perf5)/60:0.2f} min\n")
-    #
-    # # Step 4: 5000 samples
-    # perf6 = perf_counter()
-    # threads = [None] * 125
-    # for j in range(0, 125):
-    #     t = Thread(target=run_step_4, args=(8, 5000, 3, j))
-    #     threads[j] = t
-    #     t.start()
-    # for i in range(0, len(threads)):
-    #         threads[i].join()
-    #
-    # run6_time = sum(run6)
-    # run6_time_average = run6_time / 1000
-    # perf6_stop = perf_counter()
-    # print(f"\tRun 3: 5000 samples over 1000 arrays: (Selection Sort)\n\n" +
-    #       f"\t\tNumber of Threads required: 125\n" +
-    #       f"\t\tAverage Time: {run6_time_average: 0.6f}\n" +
-    #       f"\t\tTotal Time elapsed since thread start: {(perf6_stop-perf6)/60:0.2f} min\n")
+    # Step 4: 500 samples
+    perf4 = perf_counter()
+    threads = [None] * 125
+    for i in range(0, 125):
+        t = Thread(target=run_step_4, args=(8, 500, 1, 0))
+        threads[i] = t
+        t.start()
+    for t in threads:
+        t.join()
+    run4_time = sum(run4)
+    run4_time_average = run1_time / 1000
+    perf4_stop = perf_counter()
+    print(f"Step 4:\n" +
+          f"\tRun 1: 500 samples over 1000 arrays: (Selection Sort)\n\n" +
+          f"\t\tNumber of Threads required: 125\n" +
+          f"\t\tAverage Time: {run4_time_average: 0.6f}\n" +
+          f"\t\tTotal Time elapsed since thread start: {(perf4_stop-perf4)/60:0.2f} min\n")
+
+    # Step 4: 2500 samples
+    perf5 = perf_counter()
+    threads = [None] * 125
+    for j in range(0, 125):
+        t = Thread(target=run_step_4, args=(8, 2500, 2, j))
+        threads[j] = t
+        t.start()
+    for i in range(0, len(threads)):
+            threads[i].join()
+
+    run5_time = sum(run5)
+    run5_time_average = run5_time / 1000
+    perf5_stop = perf_counter()
+    print(f"\tRun 2: 2500 samples over 1000 arrays: (Selection Sort)\n\n" +
+          f"\t\tNumber of Threads required: 125\n" +
+          f"\t\tAverage Time: {run5_time_average: 0.6f}\n" +
+          f"\t\tTotal Time elapsed since thread start: {(perf5_stop-perf5)/60:0.2f} min\n")
+
+    # Step 4: 5000 samples
+    perf6 = perf_counter()
+    threads = [None] * 125
+    for j in range(0, 125):
+        t = Thread(target=run_step_4, args=(8, 5000, 3, j))
+        threads[j] = t
+        t.start()
+    for i in range(0, len(threads)):
+            threads[i].join()
+
+    run6_time = sum(run6)
+    run6_time_average = run6_time / 1000
+    perf6_stop = perf_counter()
+    print(f"\tRun 3: 5000 samples over 1000 arrays: (Selection Sort)\n\n" +
+          f"\t\tNumber of Threads required: 125\n" +
+          f"\t\tAverage Time: {run6_time_average: 0.6f}\n" +
+          f"\t\tTotal Time elapsed since thread start: {(perf6_stop-perf6)/60:0.2f} min\n")
 
     # Get total time of code execution:
     complete_time_stop = perf_counter()
