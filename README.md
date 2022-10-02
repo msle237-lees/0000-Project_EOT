@@ -27,3 +27,11 @@ End of Term Project for CSE 2300: Discrete Structures
 4. Program code used in 4 and the results of the three program runs
 5. The spreadsheet created in 5
 6. The report. In the report, say which machine you ran the experiments on (type of processor, RAM, etc). Explain your experiment and why you feel you received the results you observed.
+
+## Required To Run ##
+* CMake >= 3.24.1
+* some c++ compiler
+
+## To Recompile ##
+* Open Terminal and change directory to where you downloaded this project to:
+* `mkdir build & cd build & cmake .. & make & ./Project_EOT`
