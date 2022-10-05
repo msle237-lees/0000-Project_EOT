@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/Steps/steps.cpp" "CMakeFiles/Project_EOT.dir/lib/Steps/steps.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/lib/Steps/steps.cpp.o.d"
-  "/Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/create_arrs/create_arrs.cpp" "CMakeFiles/Project_EOT.dir/lib/create_arrs/create_arrs.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/lib/create_arrs/create_arrs.cpp.o.d"
-  "/Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/sorts/sorts.cpp" "CMakeFiles/Project_EOT.dir/lib/sorts/sorts.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/lib/sorts/sorts.cpp.o.d"
-  "/Volumes/Backup_Plus/Projects/0001-Project_EOT/src/main.cpp" "CMakeFiles/Project_EOT.dir/src/main.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/src/main.cpp.o.d"
+  "/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/Steps/steps.cpp" "CMakeFiles/Project_EOT.dir/lib/Steps/steps.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/lib/Steps/steps.cpp.o.d"
+  "/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/create_arrs/create_arrs.cpp" "CMakeFiles/Project_EOT.dir/lib/create_arrs/create_arrs.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/lib/create_arrs/create_arrs.cpp.o.d"
+  "/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/sorts/sorts.cpp" "CMakeFiles/Project_EOT.dir/lib/sorts/sorts.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/lib/sorts/sorts.cpp.o.d"
+  "/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/src/main.cpp" "CMakeFiles/Project_EOT.dir/src/main.cpp.o" "gcc" "CMakeFiles/Project_EOT.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

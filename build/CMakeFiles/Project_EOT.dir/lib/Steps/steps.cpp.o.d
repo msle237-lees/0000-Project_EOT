@@ -1,8 +1,5 @@
 CMakeFiles/Project_EOT.dir/lib/Steps/steps.cpp.o: \
-  /Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/Steps/steps.cpp \
-  /Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/Steps/steps.h \
-  /Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/Steps/../sorts/sorts.h \
-  /Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/Steps/../create_arrs/create_arrs.h \
+  /Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/Steps/steps.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \
@@ -415,4 +412,7 @@ CMakeFiles/Project_EOT.dir/lib/Steps/steps.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_nl_item.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/Steps/steps.h \
+  /Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/Steps/../sorts/sorts.h \
+  /Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/Steps/../create_arrs/create_arrs.h

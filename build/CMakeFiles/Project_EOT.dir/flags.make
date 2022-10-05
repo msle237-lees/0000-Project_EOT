@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/create_arrs -I/Volumes/Backup_Plus/Projects/0001-Project_EOT/lib/sorts -I/Volumes/Backup_Plus/Projects/0001-Project_EOT/libs/Steps
+CXX_INCLUDES = -I/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/create_arrs -I/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/lib/sorts -I/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/libs/Steps
 
 CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
 
