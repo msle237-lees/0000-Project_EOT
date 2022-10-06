@@ -1,6 +1,5 @@
 // Import necessary c++ libraries
 #include <iostream>
-#include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
 
 // Import custom module from lib folder
