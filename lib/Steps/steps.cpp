@@ -58,12 +58,6 @@ void step_protocols::step_1() {
 	arrs_data::printArray(step1, n);
 	std::cout << "\n";
 
-	// important: clean up memory
-	for (int h = 0; h < a; h++) {
-		delete [] step1[h];
-	}
-	delete [] step2;
-	step1 = 0;
 }
 
 /*
@@ -105,15 +99,9 @@ void step_protocols::step_2() {
 
 	// Output sorted array
 	std::cout << "Sorted Array: \n";
-	arrs_data::printArray(step1, n);
+	arrs_data::printArray(step2, n);
 	std::cout << "\n";
 
-	// important: clean up memory
-	for (int h = 0; h < a; h++) {
-		delete [] step2[h];
-	}
-	delete [] step2;
-	step2 = 0;
 }
 
 /*
@@ -127,7 +115,7 @@ void step_protocols::step_2() {
 		- Time each run and add the times to the total time variable
 		- Print out total execution time and the average run time for each array
 */
-void step_protocols::step_3(unsigned a, unsigned n) {
+double step_protocols::step_3(unsigned a, unsigned n) {
 	// Create the total time variable and set it to 0
 	double step3_t = 0;
 
@@ -174,6 +162,8 @@ void step_protocols::step_3(unsigned a, unsigned n) {
 	}
 	delete [] step3_a;
 	step3_a = 0;
+
+	return step3_t/a;
 }
 
 /*
@@ -187,7 +177,7 @@ void step_protocols::step_3(unsigned a, unsigned n) {
 		- Time each run and add the times to the total time variable
 		- Print out total execution time and the average run time for each array
 */
-void step_protocols::step_4(unsigned a, unsigned n) {
+double step_protocols::step_4(unsigned a, unsigned n) {
 	// Create the total time variable and set it to 0
 	double step4_t = 0;
 
@@ -232,6 +222,8 @@ void step_protocols::step_4(unsigned a, unsigned n) {
 	for (int h = 0; h < a; h++) {
 		delete [] step4_a[h];
 	}
-	delete [] step3_a;
+	delete [] step4_a;
 	step4_a = 0;
+
+	return step4_t/a;
 }
