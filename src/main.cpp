@@ -2,7 +2,6 @@
 #include <iostream>
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
-#include <fstream> /* ofstream */
 
 // Import custom module from lib folder
 #include "../lib/Steps/steps.h"

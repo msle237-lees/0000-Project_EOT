@@ -21,12 +21,12 @@ End of Term Project for CSE 2300: Discrete Structures
 6. Write a one page document explaining the results, bearing in mind that both algorithms have a complexity of O(n^2) and what you know about complexity analysis. Use your knowledge of complexity analysis to explain your results.
 
 ## Submission Documents: ##
-1. Program code for 1
-2. Program code for 2
-3. Program code used in 3 and the results of the three program runs
-4. Program code used in 4 and the results of the three program runs
-5. The spreadsheet created in 5
-6. The report. In the report, say which machine you ran the experiments on (type of processor, RAM, etc). Explain your experiment and why you feel you received the results you observed.
+1. Program code for 1 (Bubble sort located in lib/sorts folder and step 1 code located in lib/Steps/steps.cpp)
+2. Program code for 2 (Selection sort located in lib/sorts folder and step 2 code located in lib/Steps/steps.cpp)
+3. Program code used in 3 and the results of the three program runs (step 3 code located in lib/Steps/steps.cpp)
+4. Program code used in 4 and the results of the three program runs (step 4 code located in lib/Steps/steps.cpp)
+5. The spreadsheet created in 5 (Located in doc/Data_Points_Over_10_Runs.xlsx)
+6. The report. In the report, say which machine you ran the experiments on (type of processor, RAM, etc). Explain your experiment and why you feel you received the results you observed. (Located in doc/Project_EOT.pdf)
 
 ## Required To Run ##
 * CMake >= 3.24.1
