@@ -1,4 +1,4 @@
-# Install script for directory: /Volumes/ExternalSSD/Youtube/github/0001-Project_EOT
+# Install script for directory: /Volumes/Vault/Work/github/0001-Project_EOT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Volumes/ExternalSSD/Youtube/github/0001-Project_EOT/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Volumes/Vault/Work/github/0001-Project_EOT/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

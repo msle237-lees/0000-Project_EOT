@@ -1,10 +1,9 @@
 // include the necessary c++ libraries and header files
 #include <iostream>
-#include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
 
 // include the necessary header files from the lib folder
-#include "steps.h"
+#include "../Steps/steps.h"
 #include "../sorts/sorts.h"
 #include "../create_arrs/create_arrs.h"
 
