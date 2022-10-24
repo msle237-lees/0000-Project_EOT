@@ -73,7 +73,7 @@ void step_protocols::step_1() {
 */
 void step_protocols::step_2() {
 	// Ask for input from the user
-	std::cout << "Enter array size for step 1 - Bubble Sort: ";
+	std::cout << "Enter array size for step 2 - Selection Sort: ";
 
 	// Define the size of the array as n
 	int n;

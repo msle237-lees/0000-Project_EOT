@@ -61,14 +61,10 @@ void sort::selectionSort(int arr[], int n) {
 
         // if so then set min_idx to equal j
 				min_idx = j;
-			}
 
-      // test if min_idx is not equal to i
-			if(min_idx!=i) {
-
-        // if so then call the swap function to swap the values locations
+        // call the swap function to swap the values locations
 				sort::swap(&arr[min_idx], &arr[i]);
-			}
+      }
 		}
 	}
 }

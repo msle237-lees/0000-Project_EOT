@@ -10,11 +10,11 @@ using namespace steps;
 
 int main()
 {
-  // // Call Step 1 Function from custom module class
-  // step_protocols::step_1();
-  //
-  // // Call Step 2 Function from custom module class
-	// step_protocols::step_2();
+  // Call Step 1 Function from custom module class
+  step_protocols::step_1();
+
+  // Call Step 2 Function from custom module class
+	step_protocols::step_2();
 
   // Initialize the performance counter variables
 	std::chrono::time_point<std::chrono::system_clock> as, ae;
