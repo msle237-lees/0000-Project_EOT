@@ -9,6 +9,9 @@
 // Using custom module class
 using namespace steps;
 
+// Using the default std namespace
+using namespace std;
+
 int main()
 {
   // Call Step 1 Function from custom module class
@@ -51,5 +54,8 @@ int main()
 	std::cout << "\t Total Execution Time: " << eas.count() << " seconds\n";
 
   // Exit program
+  std::cin.ignore(std::cin.rdbuf()->in_avail());
+  std::cout << "Press Enter to exit program...";
+  std::cin.ignore();
 	return 0;
 }

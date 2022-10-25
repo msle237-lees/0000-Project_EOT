@@ -28,10 +28,8 @@ End of Term Project for CSE 2300: Discrete Structures
 5. The spreadsheet created in 5 (Located in doc/Data_Points_Over_10_Runs.xlsx)
 6. The report. In the report, say which machine you ran the experiments on (type of processor, RAM, etc). Explain your experiment and why you feel you received the results you observed. (Located in doc/Project_EOT.pdf)
 
-## Required To Run ##
-* CMake >= 3.24.1
-* some c++ compiler
-
-## To Recompile ##
-* Open Terminal and change directory to where you downloaded this project to:
-* `mkdir build & cd build & cmake .. & make & ./Project_EOT`
+## For the professor to execute ##
+1. Open the project folder 
+2. Open the build folder
+3. Double click the Project_EOT executable
+4. After the code has completed press enter to close the terminal
