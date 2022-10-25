@@ -1,6 +1,7 @@
 // Import necessary c++ libraries
 #include <iostream>
 #include <stdlib.h>     /* srand, rand */
+#include <chrono>       /* time */
 
 // Import custom module from lib folder
 #include "../lib/Steps/steps.h"

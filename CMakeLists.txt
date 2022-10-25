@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.9)
+cmake_minimum_required(VERSION 3.0)
 project(Project_EOT)
 
 #Bring the headers, such as Student.h into the project

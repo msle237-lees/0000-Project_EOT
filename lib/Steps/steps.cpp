@@ -1,6 +1,7 @@
 // include the necessary c++ libraries and header files
 #include <iostream>
 #include <stdlib.h>     /* srand, rand */
+#include <chrono>       /* time */
 
 // include the necessary header files from the lib folder
 #include "../Steps/steps.h"
@@ -32,10 +33,17 @@ void step_protocols::step_1() {
 	std::cout << "Enter array size for step 1 - Bubble Sort: ";
 
 	// Define the size of the array as n
-	int n;
+	int n = 10;
 
 	// Take in user input and store in n
 	std::cin >> n;
+
+	// Check if the user input is valid
+	if (n <= 0) {
+		// If the user input is invalid, print error message and exit program
+		std::cout << "Invalid input. Exiting program.\n";
+		exit(1);
+	}
 
 	// Create the array (list) of size n
 	int step1[n];
@@ -114,7 +122,7 @@ void step_protocols::step_2() {
 		- Time each run and add the times to the total time variable
 		- Print out total execution time and the average run time for each array
 */
-double step_protocols::step_3(unsigned a, unsigned n) {
+double step_protocols::step_3(int a, int n) {
 	// Create the total time variable and set it to 0
 	double step3_t = 0;
 
@@ -176,7 +184,7 @@ double step_protocols::step_3(unsigned a, unsigned n) {
 		- Time each run and add the times to the total time variable
 		- Print out total execution time and the average run time for each array
 */
-double step_protocols::step_4(unsigned a, unsigned n) {
+double step_protocols::step_4(int a, int n) {
 	// Create the total time variable and set it to 0
 	double step4_t = 0;
 
@@ -190,8 +198,7 @@ double step_protocols::step_4(unsigned a, unsigned n) {
 	int** step4_a = arrs_data::create2DArray(a, n);
 
 	// Loop through the array from 0 to a
-	int i;
-	for (i=0; i<a; i++) {
+	for (int i=0; i<a; i++) {
 		// Take the run time start time
 		ss = std::chrono::system_clock::now();
 
