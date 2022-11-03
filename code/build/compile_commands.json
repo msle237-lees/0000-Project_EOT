@@ -1,0 +1,22 @@
+[
+{
+  "directory": "D:/Work/github/0001-Project_EOT/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\BUILDT~1\\VC\\Tools\\Llvm\\x64\\bin\\clang.exe -ID:/Work/github/0001-Project_EOT/lib/create_arrs -ID:/Work/github/0001-Project_EOT/lib/sorts -ID:/Work/github/0001-Project_EOT/libs/Steps -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -o CMakeFiles\\Project_EOT.dir\\src\\main.cpp.obj -c D:\\Work\\github\\0001-Project_EOT\\src\\main.cpp",
+  "file": "D:\\Work\\github\\0001-Project_EOT\\src\\main.cpp"
+},
+{
+  "directory": "D:/Work/github/0001-Project_EOT/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\BUILDT~1\\VC\\Tools\\Llvm\\x64\\bin\\clang.exe -ID:/Work/github/0001-Project_EOT/lib/create_arrs -ID:/Work/github/0001-Project_EOT/lib/sorts -ID:/Work/github/0001-Project_EOT/libs/Steps -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -o CMakeFiles\\Project_EOT.dir\\lib\\create_arrs\\create_arrs.cpp.obj -c D:\\Work\\github\\0001-Project_EOT\\lib\\create_arrs\\create_arrs.cpp",
+  "file": "D:\\Work\\github\\0001-Project_EOT\\lib\\create_arrs\\create_arrs.cpp"
+},
+{
+  "directory": "D:/Work/github/0001-Project_EOT/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\BUILDT~1\\VC\\Tools\\Llvm\\x64\\bin\\clang.exe -ID:/Work/github/0001-Project_EOT/lib/create_arrs -ID:/Work/github/0001-Project_EOT/lib/sorts -ID:/Work/github/0001-Project_EOT/libs/Steps -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -o CMakeFiles\\Project_EOT.dir\\lib\\sorts\\sorts.cpp.obj -c D:\\Work\\github\\0001-Project_EOT\\lib\\sorts\\sorts.cpp",
+  "file": "D:\\Work\\github\\0001-Project_EOT\\lib\\sorts\\sorts.cpp"
+},
+{
+  "directory": "D:/Work/github/0001-Project_EOT/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\BUILDT~1\\VC\\Tools\\Llvm\\x64\\bin\\clang.exe -ID:/Work/github/0001-Project_EOT/lib/create_arrs -ID:/Work/github/0001-Project_EOT/lib/sorts -ID:/Work/github/0001-Project_EOT/libs/Steps -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -o CMakeFiles\\Project_EOT.dir\\lib\\Steps\\steps.cpp.obj -c D:\\Work\\github\\0001-Project_EOT\\lib\\Steps\\steps.cpp",
+  "file": "D:\\Work\\github\\0001-Project_EOT\\lib\\Steps\\steps.cpp"
+}
+]

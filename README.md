@@ -1,6 +1,20 @@
 # 0001-Project_EOT
 End of Term Project for CSE 2300: Discrete Structures
 
+## Submission Documents: ##
+1. Program code for 1 (Bubble sort located in lib/sorts folder and step 1 code located in lib/Steps/steps.cpp)
+2. Program code for 2 (Selection sort located in lib/sorts folder and step 2 code located in lib/Steps/steps.cpp)
+3. Program code used in 3 and the results of the three program runs (step 3 code located in lib/Steps/steps.cpp)
+4. Program code used in 4 and the results of the three program runs (step 4 code located in lib/Steps/steps.cpp)
+5. The spreadsheet created in 5 (Located in doc/Data_Points_Over_10_Runs.xlsx)
+6. The report. In the report, say which machine you ran the experiments on (type of processor, RAM, etc). Explain your experiment and why you feel you received the results you observed. (Located in doc/Project_EOT.pdf)
+
+## For the professor to execute ##
+1. Open the project folder 
+2. Open the build folder
+3. Double click the Project_EOT executable
+4. After the code has completed press enter to close the terminal
+
 ## Requirements: ##
 1. Write a computer program that prompts the user for a number, creates an array for that number of random integers, and then uses the bubble sort to order the array. The program should print out the array prior to the call to the sorting algorithm and afterwards. You can write the program in either Java, C++, C#, or whatever language you are most comfortable in. DO NOT USE AN API FROM THE LANGUAGE LIBRARY. WRITE THE PROGRAM TO PERFORM THE SORT.
 2. Repeat 1 but use selection sort this time. AGAIN, WRITE OUT THE PROGRAM FOR THE SELECTION SORT. DO NOT USE THE LANGUAGE LIBRARY.
@@ -19,17 +33,3 @@ End of Term Project for CSE 2300: Discrete Structures
 4. Repeat 3 using selection sort.
 5. You now have 6 data points (the averages from the three array sizes for the two sort algorithms). Create a spreadsheet showing the results of 3 and 4 and create a graph to graphically represent the information. Show both sort algorithms on the same graph for comparison.
 6. Write a one page document explaining the results, bearing in mind that both algorithms have a complexity of O(n^2) and what you know about complexity analysis. Use your knowledge of complexity analysis to explain your results.
-
-## Submission Documents: ##
-1. Program code for 1 (Bubble sort located in lib/sorts folder and step 1 code located in lib/Steps/steps.cpp)
-2. Program code for 2 (Selection sort located in lib/sorts folder and step 2 code located in lib/Steps/steps.cpp)
-3. Program code used in 3 and the results of the three program runs (step 3 code located in lib/Steps/steps.cpp)
-4. Program code used in 4 and the results of the three program runs (step 4 code located in lib/Steps/steps.cpp)
-5. The spreadsheet created in 5 (Located in doc/Data_Points_Over_10_Runs.xlsx)
-6. The report. In the report, say which machine you ran the experiments on (type of processor, RAM, etc). Explain your experiment and why you feel you received the results you observed. (Located in doc/Project_EOT.pdf)
-
-## For the professor to execute ##
-1. Open the project folder 
-2. Open the build folder
-3. Double click the Project_EOT executable
-4. After the code has completed press enter to close the terminal

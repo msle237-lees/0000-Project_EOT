@@ -1,0 +1,1 @@
+manim -pqh scene.py scene2
