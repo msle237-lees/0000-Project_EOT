@@ -49,7 +49,7 @@ class scene2(Scene):
         Bubble Sort:
           Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, 
           compares adjacent elements and swaps them if they are in the wrong order. 
-          This function loops through all of the arrays and sorts them.''', font='Monospace', color='White').scale(0.325).move_to([-1.5, 2, 0])
+        ''', font='Monospace', color='White').scale(0.325).move_to([-1.5, 2, 0])
 
         self.input_array = [2,9,1,4,7,8,6,5,3]
         self.indexes = [i for i in range(len(self.input_array))]
@@ -75,8 +75,7 @@ class scene2(Scene):
         self.play(Create(self.v_array))
         self.wait(1)
         self.bubble_sort()
-        self.play(FadeOut(example_text), run_time=1)
-        self.play(FadeOut(self.v_array))
+        self.play(FadeOut(example_text), FadeOut(self.v_array), run_time=1)
         self.wait(1)
 
         # Show the code for the algorithm in c++
@@ -97,8 +96,7 @@ class scene2(Scene):
         self.play(Write(data), run_time=10)
         self.play(Write(table), run_time=5)
         self.wait(5)
-        self.play(FadeOut(data), run_time=5)
-        self.play(table.animate.move_to([3, -1, 0]))
+        self.play(FadeOut(data), table.animate.move_to([3, -1, 0]), run_time=5)
         self.wait(1)
 
         # Show the graph of the data
