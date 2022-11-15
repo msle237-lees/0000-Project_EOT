@@ -1,10 +1,11 @@
-cmake_minimum_required(VERSION 3.0)
-project(Project_EOT)
+cmake_minimum_required(VERSION 3.0.0)
+project(Project_EOT VERSION 0.1.0)
 
-#Bring the headers, such as Student.h into the project
-include_directories(lib/create_arrs lib/sorts libs/Steps)
+include(CTest)
+enable_testing()
 
-#Can manually add the sources using the set command as follows:
-set(SOURCES src/main.cpp lib/create_arrs/create_arrs.cpp lib/sorts/sorts.cpp lib/Steps/steps.cpp)
+add_executable(Project_EOT main.cpp)
 
-add_executable(Project_EOT ${SOURCES})
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)

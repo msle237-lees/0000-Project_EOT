@@ -1,0 +1,10 @@
+^F:\WORK\YOUTUBE\0001-PROJECT_EOT\BUILD\CMAKEFILES\300042BB740E6C4A4E6156C6AE33D79A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Work/Youtube/0001-Project_EOT -BF:/Work/Youtube/0001-Project_EOT/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/Work/Youtube/0001-Project_EOT/build/Project_EOT.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

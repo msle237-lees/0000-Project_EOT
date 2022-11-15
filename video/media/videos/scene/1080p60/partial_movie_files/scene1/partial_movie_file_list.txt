@@ -1,4 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Volumes/Vault/Work/github/0001-Project_EOT/video/media/videos/scene/1080p60/partial_movie_files/scene1/450974505_1641949461_2893795889.mp4'
-file 'file:/Volumes/Vault/Work/github/0001-Project_EOT/video/media/videos/scene/1080p60/partial_movie_files/scene1/34786186_2066480477_2143826174.mp4'
-file 'file:/Volumes/Vault/Work/github/0001-Project_EOT/video/media/videos/scene/1080p60/partial_movie_files/scene1/34786186_4218051463_2848484866.mp4'
