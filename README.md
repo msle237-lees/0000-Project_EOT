@@ -1,4 +1,6 @@
-# 0001-Project_EOT
+# Project Number: 0001 #
+# Project Name: Project EOT
+
 End of Term Project for CSE 2300: Discrete Structures
 
 ## For the professor to execute ##
