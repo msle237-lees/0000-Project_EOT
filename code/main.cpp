@@ -112,7 +112,7 @@ void step4(int a, int n) {
     int** step_4 = create2DArray(a, n);
     for (int i = 0; i < a; i++) {
         individual_start = std::chrono::system_clock::now();
-        bubbleSort(step_4[i], n);
+        selectionSort(step_4[i], n);
         individual_end = std::chrono::system_clock::now();
         std::chrono::duration<double> elapsed_seconds = individual_end - individual_start;
         step_4_time += elapsed_seconds.count();
