@@ -65,9 +65,11 @@ func main() {
 	n, _ = strconv.Atoi(in)
 	arr := create_2d_array(1, n)
 	start_time := time.Now()
+	fmt.Println("Array unsorted: ", arr[0])
 	bubble_sort(arr[0])
+	fmt.Println("Array sorted: ", arr[0])
 	ex_time_step_1 := time.Since(start_time)
-	fmt.Println("Step 1: With array of size ", in, ", total execution time is: ", ex_time_step_1)
+	fmt.Println("Step 1: with array of size ", in, ", total execution time is: ", ex_time_step_1)
 	fmt.Println("")
 
 	// Step 2: Selection Sort array of size n, n = user inputted number
@@ -76,9 +78,11 @@ func main() {
 	n, _ = strconv.Atoi(in)
 	arr = create_2d_array(1, n)
 	start_time = time.Now()
+	fmt.Println("Array unsorted: ", arr[0])
 	selection_sort(arr[0])
+	fmt.Println("Array sorted: ", arr[0])
 	ex_time_step_2 := time.Since(start_time)
-	fmt.Println("Step 2: With array of size ", in, ", total execution time is: ", ex_time_step_2)
+	fmt.Println("Step 2: with array of size ", in, ", total execution time is: ", ex_time_step_2)
 	fmt.Println("")
 
 	// Step 3: Bubble Sort 1000 arrays with sizes 500, 2500, 5000 elements
@@ -98,7 +102,7 @@ func main() {
 		bubble_sort(arr[i])
 	}
 	ex_time_step_3_b := time.Since(start_time) / 1000
-	fmt.Println("Step 3: With 1000 arrays of size 2500, average execution time is: ", ex_time_step_3_b)
+	fmt.Println("Step 3: With 1000 array with size 2500, average execution time is: ", ex_time_step_3_b)
 
 	// 5000 elements
 	arr = create_2d_array(1000, 5000)
@@ -107,7 +111,7 @@ func main() {
 		bubble_sort(arr[i])
 	}
 	ex_time_step_3_c := time.Since(start_time) / 1000
-	fmt.Println("Step 3: With 1000 arrays of size 5000, average execution time is: ", ex_time_step_3_c)
+	fmt.Println("Step 3: With 1000 array with size 5000, average execution time is: ", ex_time_step_3_c)
 
 	// Step 4: Selection Sort 1000 arrays with sizes 500, 2500, 5000 elements
 	// 500 elements
@@ -126,7 +130,7 @@ func main() {
 		selection_sort(arr[i])
 	}
 	ex_time_step_4_b := time.Since(start_time) / 1000
-	fmt.Println("Step 4: With 1000 arrays of size 2500, average execution time is: ", ex_time_step_4_b)
+	fmt.Println("Step 4: With 1000 array with size 2500, average execution time is: ", ex_time_step_4_b)
 
 	// 5000 elements
 	arr = create_2d_array(1000, 5000)
@@ -135,16 +139,14 @@ func main() {
 		selection_sort(arr[i])
 	}
 	ex_time_step_4_c := time.Since(start_time) / 1000
-	fmt.Println("Step 4: With 1000 arrays of size 5000, average execution time is: ", ex_time_step_4_c)
+	fmt.Println("Step 4: With 1000 array with size 5000, average execution time is: ", ex_time_step_4_c)
 
 	var data_list [][]string
 	data_list = append(data_list, []string{"Step", "Elements", "Execution Time"})
-	data_list = append(data_list, []string{"3", " ", " "})
-	data_list = append(data_list, []string{" ", "500", ex_time_step_3_a.String()})
+	data_list = append(data_list, []string{"3", "500", ex_time_step_3_a.String()})
 	data_list = append(data_list, []string{" ", "2500", ex_time_step_3_b.String()})
 	data_list = append(data_list, []string{" ", "5000", ex_time_step_3_c.String()})
-	data_list = append(data_list, []string{"4", " ", " "})
-	data_list = append(data_list, []string{" ", "500", ex_time_step_4_a.String()})
+	data_list = append(data_list, []string{"4", "500", ex_time_step_4_a.String()})
 	data_list = append(data_list, []string{" ", "2500", ex_time_step_4_b.String()})
 	data_list = append(data_list, []string{" ", "5000", ex_time_step_4_c.String()})
 	for _, value := range data_list {
