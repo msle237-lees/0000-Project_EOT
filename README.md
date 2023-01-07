@@ -3,14 +3,7 @@
 
 End of Term Project for CSE 2300: Discrete Structures
 
-## For the professor to execute ##
-1. Open the `code` folder
-2. Open the `build` folder
-3. Open the `Release` folder
-4. Double click the `Project_EOT` executable
-5. After the code has completed press enter to close the terminal
-
-## All code can be found within the code folder in the `main.cpp` file ##
+## All code can be found within the code folder in the `main.go` file ##
 
 ## Requirements: ##
 1. Write a computer program that prompts the user for a number, creates an array for that number of random integers, and then uses the bubble sort to order the array. The program should print out the array prior to the call to the sorting algorithm and afterwards. You can write the program in either Java, C++, C#, or whatever language you are most comfortable in. DO NOT USE AN API FROM THE LANGUAGE LIBRARY. WRITE THE PROGRAM TO PERFORM THE SORT.
